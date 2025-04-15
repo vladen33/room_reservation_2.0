@@ -26,3 +26,4 @@ class Settings(BaseSettings):
         env_file = '.env'
 
 settings = Settings()
+settings.private_key = settings.private_key.replace('\\n', '\n')
